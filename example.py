@@ -137,9 +137,9 @@ _ = system.train(
 results = system.evaluate(test_dataloader, evals)
 
 
-print(results[0])
+print(results)
 
-print(type(results[0]))
+print(type(results))
 
 # for r in results:
 #     print(results[r])
