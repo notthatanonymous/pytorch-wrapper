@@ -14,7 +14,7 @@ from torch.utils.data.sampler import SubsetRandomSampler
 from pytorch_wrapper import modules, System
 from pytorch_wrapper import evaluators as evaluators
 from pytorch_wrapper.loss_wrappers import GenericPointWiseLossWrapper
-from pytorch_wrapper.training_callbacks import EarlyStoppingCriterionCallback
+from pytorch_wrapper.training_callbacks import EarlyStoppingCriterionCallback, NumberOfEpochsStoppingCriterionCallback
 
 
 class MNISTDatasetWrapper(Dataset):
