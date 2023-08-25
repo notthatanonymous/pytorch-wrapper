@@ -105,9 +105,10 @@ else:
 loss_wrapper = GenericPointWiseLossWrapper(nn.CrossEntropyLoss())
 evals = {
 
-    'prec': evaluators.MultiClassPrecisionEvaluator(average='macro'),
-    'rec': evaluators.MultiClassRecallEvaluator(average='macro'),
-    'f1': evaluators.MultiClassF1Evaluator(average='macro')
+    # 'prec': evaluators.MultiClassPrecisionEvaluator(average='macro'),
+    # 'rec': evaluators.MultiClassRecallEvaluator(average='macro'),
+    # 'f1': evaluators.MultiClassF1Evaluator(average='macro'),
+    'acc': evaluators.MultiClassAccuracyEvaluator()
 
 }
 
