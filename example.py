@@ -144,5 +144,5 @@ print(type(results))
 # for r in results:
 #     print(results[r])
 
-score = results['acc'].split(': ')[1].split('%')[0]
+score = str(results['acc']).split(': ')[1].split('%')[0]
 print(f"\n\n\nScore: {score}\n\n\n")
