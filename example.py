@@ -136,8 +136,13 @@ _ = system.train(
 
 results = system.evaluate(test_dataloader, evals)
 
+
+print(results[0])
+
+print(type(results[0]))
+
 # for r in results:
 #     print(results[r])
 
-score = results[0].split(': ')[1].split('%')[0]
-print(f"\n\n\nScore: {score}\n\n\n")
+# score = results[0].split(': ')[1].split('%')[0]
+# print(f"\n\n\nScore: {score}\n\n\n")
