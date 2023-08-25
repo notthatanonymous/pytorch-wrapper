@@ -122,13 +122,13 @@ _ = system.train(
     evaluation_data_loaders={
         'val': val_dataloader
     },
-    callbacks=[
-        EarlyStoppingCriterionCallback(
-            patience=3,
-            evaluation_data_loader_key='val',
-            evaluator_key='f1',
-            tmp_best_state_filepath='tmp/mnist_tmp_best.weights'
-        )
+    callbacks=[NumberOfEpochsStoppingCriterionCallback(3)
+        # EarlyStoppingCriterionCallback(
+        #     patience=3,
+        #     evaluation_data_loader_key='val',
+        #     evaluator_key='f1',
+        #     tmp_best_state_filepath='tmp/mnist_tmp_best.weights'
+        # )
     ]
 )
 
